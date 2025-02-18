@@ -12,6 +12,7 @@
   "dependencies": {
     "flowbite": "^3.1.2",
     "nuxt": "^3.15.4",
+    "simple-datatables": "^10.0.0",
     "vue": "latest",
     "vue-router": "latest"
   },

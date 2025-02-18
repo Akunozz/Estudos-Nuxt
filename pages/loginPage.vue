@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: false // Remove o layout default para esta página
+  layout: false
 });
 </script>
 

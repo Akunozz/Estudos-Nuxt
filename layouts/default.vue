@@ -1,25 +1,12 @@
 <script setup>
-import { ref, computed } from "vue";
 
-const isCollapsed = ref(false); // Estado do sidebar
-
-// Computa a classe da margem do conteúdo principal
-const mainContentClasses = computed(() => {
-  return isCollapsed.value
-    ? "p-4 ml-20 bg-black mt-16 sm:mt-14 transition-all"
-    : "p-4 ml-64 bg-black mt-16 sm:mt-14 transition-all";
-});
-
-const toggleSidebar = () => {
-  isCollapsed.value = !isCollapsed.value;
-};
 </script>
 
 <template>
-  <FlowbiteSidebar :collapsed="isCollapsed" @toggle="toggleSidebar" />
+  <FlowbiteSidebar />
   <FlowbiteNavbar />
 
-  <div :class="mainContentClasses">
+  <div class="bg-gray-900 sm:ml-64 mt-16 sm:mt-14">
     <slot />
   </div>
 </template>

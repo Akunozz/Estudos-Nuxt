@@ -1,3 +1,13 @@
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const emailInput = ref(null);
+
+onMounted(() => {
+    emailInput.value?.focus();
+});
+</script>
+
 <template>
     <form class="max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full px-4">
 
@@ -5,11 +15,11 @@
 
         <div class="mb-5">
             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-            <input type="email" id="email"
+            <input ref="emailInput" type="email" id="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Email" required />
         </div>
-
+        
         <div class="mb-5">
             <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Senha</label>
             <input type="password" id="password"
