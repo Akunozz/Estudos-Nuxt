@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import dataTable from '~/components/flowbite/usuarios/dataTable.vue';
+import DataTable from '~/components/flowbite/usuarios/DataTable.vue';
 </script>
 
 <template>
     <div class="h-screen">
-        <dataTable />
+        <DataTable />
     </div>
 </template>
