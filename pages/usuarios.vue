@@ -3,7 +3,7 @@ import dataTable from '~/components/flowbite/usuarios/dataTable.vue';
 </script>
 
 <template>
-    <div>
+    <div class="h-screen">
         <dataTable />
     </div>
 </template>

@@ -1,11 +1,18 @@
 <script setup>
+
 import { ref, onMounted } from 'vue';
+import { initFlowbite } from 'flowbite'
 
 const emailInput = ref(null);
 
 onMounted(() => {
     emailInput.value?.focus();
 });
+// initialize components based on data attribute selectors
+onMounted(() => {
+  initFlowbite();
+})
+
 </script>
 
 <template>
